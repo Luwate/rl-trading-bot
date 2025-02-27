@@ -17,3 +17,13 @@ Key Challenges
 3. Inefficient Risk Management – Poor balance between risk and reward.
 4. High Costs – Manual strategy adjustments require oversight.
 5. Competitive Disadvantage – AI-driven firms outperform traditional traders.
+
+## OBJECTIVE
+
+Our goal is to build an algorithmic trading bot that is trained in reinforcement learning and learns from market data to optimize its trading strategies. The bot will work to improve profits, reduce risks, and constantly adjust to the ever-changing market environment.
+
+Our RL trading bot would appeal to:
+1. Investors & Traders - The bot utilizes adaptive trading strategies that may outperform the traditional method
+2. Executives & Decision-Makers - AI-powered trading solutions improve efficiency, reduce human bias, and increase market opportunity.
+3. Quantitative Traders - Focus on algorithmic optimization and performance metrics.
+4. Risk Management Teams - Ensure the strategy aligns with financial risk controls.
