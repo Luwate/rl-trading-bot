@@ -1,0 +1,12 @@
+# Ignore unnecessary files to speed up build
+__pycache__/
+*.pyc
+*.pyo
+*.log
+*.txt~
+.DS_Store
+
+# Prevent unnecessary large files from being copied
+documents/
+
+
