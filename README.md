@@ -64,3 +64,33 @@ For each coin, the indicators generated include:
 ## PCA
 Standardization was first performed on the data after which, Principle Component Analysis was employed to reduce the dimensionality of the dataset’s financial indicators. We chose to retain 89% of the variance.
 This was done to avoid overfitting and optimize efficiency in the RL bot
+
+## RL TRADING BOT
+TRADING ENVIRONMENT
+
+Gym was employed, to create a custom environment to train and test the bot.
+The environment: a simulation where a trading bot learns to make profitable trading decisions.
+The environment accepts a user's investment amount as input and returns the final portfolio value once the bot reaches a predefined threshold.
+
+## REWARD FUNCTION
+The primary mechanism for evaluating the quality of actions, and determining what constitutes a favorable or unfavorable decision within the trading environment.
+Our reward function
+* Encourages buying to stop the bot from simply holding
+* Rewards for realized profits
+* Punish big trades - big trades are risky so they should be disincentivized
+* Inactivity penalty: It’s a trading bot, not an investor. It should avoid sitting on its hands
+
+## RPPO
+We chose a PPO model because it handles stochastic and noisy markets well, allows us to implement a dynamic range of actions for our bot, and learns relatively faster than other models in backtesting.
+RPPO is ideal for algorithmic trading, where price movements and market indicators depend on past trends. RPPO was considered as it implements additional regularization techniques to improve stability and performance.
+* Smoother policy updates prevent drastic policy changes.
+* Liquidation is prevented while exploration and exploitation are encouraged. Gamma set to
+The policy used LSTM, ‘remembers’ the previous week's data when considering the next action to take
+
+## CONCLUSION
+The RL trading bot operates effectively within predefined parameters, ensuring successful backtesting through historical data while preventing liquidation.
+This is highly significant to risk management teams. This shows that the bot mitigates risk in unseen territory and adapts to different market conditions. Avoiding bad trades and managing drawdowns.
+The bot is encouraged to explore multiple strategies that would be useful to Hedge Fund Executives. AI-based trading agents develop dynamic strategies that perform well in the highly volatile cryptocurrency market.
+Our trading bot serves as a baseline from which a more robust algorithm could evolve into a profitable system or be integrated into a broader quant trading framework with further refinements.
+
+## THANK YOU!
