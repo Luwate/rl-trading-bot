@@ -43,3 +43,24 @@ Volume - confirms price movements, detects breakouts, and provides liquidity tha
 * DOGE has high volatility which indicates instability in the market.
 * USD however has the lowest volatility indicating stability in the market.
 * High volatility means greater potential for both high returns and high risk. Lower volatility suggests more stability but potentially lower returns
+
+## CORRELATION MATRIX OF CRYPTOCURRENCY RETURNS
+This heatmap represents the correlation matrix of the daily returns of different cryptocurrencies. Here are the key takeaways:
+* Most cryptocurrencies are positively correlated, meaning they move together in price.
+* Stablecoins act as a hedge, with a very low correlation to other cryptos.
+* Diversification within crypto is limited, as many assets tend to follow the same trends.
+
+## DATA PREPARATION
+FEATURE ENGINEERING
+Technical indicators were feature-engineered for the RL model to optimize learning efficiency, refine decision-making, and minimize noise.
+For each coin, the indicators generated include:
+* Exponential Moving Average - smoothes closing price data and gives more weight to recent prices, making the model more responsive to price change.
+* Moving Average Convergence Divergence - measures two moving averages and identifies trends, momentum shifts, and potential buy/sell signals.
+* Relative Strength Index - measures the speed and change of price movement. This indicator helps identify overbought and oversold conditions in the market.
+* Bollinger Bands - aids in identifying price volatility and potential overbought and oversold conditions.
+* On-Balance Volume - helps identify trends and confirm price movements.
+* Money Flow Index - Similar to RSI but considers volume, helping detect buying/selling pressure.
+
+## PCA
+Standardization was first performed on the data after which, Principle Component Analysis was employed to reduce the dimensionality of the dataset’s financial indicators. We chose to retain 89% of the variance.
+This was done to avoid overfitting and optimize efficiency in the RL bot
