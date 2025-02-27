@@ -27,3 +27,13 @@ Our RL trading bot would appeal to:
 2. Executives & Decision-Makers - AI-powered trading solutions improve efficiency, reduce human bias, and increase market opportunity.
 3. Quantitative Traders - Focus on algorithmic optimization and performance metrics.
 4. Risk Management Teams - Ensure the strategy aligns with financial risk controls.
+
+## DATA UNDERSTANDING
+DATA COLLECTION
+
+Market cryptocurrency data obtained from Binance and CMC served our purpose. This goes back to February 2020. The top 50 coins by market cap, which also describe best the volatility in the market, were chosen.
+The dataset contains 10711 rows and 75 columns.
+The columns contain the closing price and volume traded for each coin.
+Each entry is a record of the close and volume after 4 hours.
+Closing price - helps identify stable trends, reduces noise, and simplifies trade execution
+Volume - confirms price movements, detects breakouts, and provides liquidity that is favorable for trades to be executed.
