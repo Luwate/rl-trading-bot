@@ -4,7 +4,7 @@ import requests
 API_URL = "http://localhost:8000"
 
 # Fetch BTC test data
-file_path = "..data/test_data.csv"
+file_path = "../data/test_data.csv"
 df = pd.read_csv(file_path, parse_dates=["Open Time"])
 btc_df = df[["Open Time", "BTCUSDT_Close"]]
 
