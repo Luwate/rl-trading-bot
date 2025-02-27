@@ -37,3 +37,9 @@ The columns contain the closing price and volume traded for each coin.
 Each entry is a record of the close and volume after 4 hours.
 Closing price - helps identify stable trends, reduces noise, and simplifies trade execution
 Volume - confirms price movements, detects breakouts, and provides liquidity that is favorable for trades to be executed.
+
+## VOLATILITY COMPARISON
+
+* DOGE has high volatility which indicates instability in the market.
+* USD however has the lowest volatility indicating stability in the market.
+* High volatility means greater potential for both high returns and high risk. Lower volatility suggests more stability but potentially lower returns
